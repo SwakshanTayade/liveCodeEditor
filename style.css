@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+.main{
+    height: 100vh;
+    padding: 10px;
+    display: flex;
+    gap: 1rem;
+    background: linear-gradient(rgb(32, 31, 31),rgb(0, 0, 0));
+}
+.code{
+    height: 100%;
+    padding: 10px;
+    width: 35%;
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    overflow-y: auto;
+    gap: 1rem;
+}
+.code::-webkit-scrollbar{
+    width: .4rem;
+}
+.code::-webkit-scrollbar-track{
+    width: .4rem;
+    opacity: 1;
+    background-color: rgb(235, 235, 235);
+}
+.html{
+    height: max-content;
+    width: 100%;
+    /* border: 2px solid red; */
+}
+.html textarea,.css textarea, .js textarea{
+    font-family: 'JetBrains Mono', monospace;
+    width: 100%;
+    height: 25vh;
+    padding: 10px;
+    caret-color: aliceblue;
+    caret-shape: underscore;
+    resize: vertical;
+    background-color: rgb(19, 6, 54);
+    color: white;
+}
+.html textarea::-webkit-scrollbar,.css textarea::-webkit-scrollbar,.js textarea::-webkit-scrollbar{
+    width: .4rem;
+}
+.html textarea::-webkit-scrollbar-thumb,.css textarea::-webkit-scrollbar-thumb,.js textarea::-webkit-scrollbar-thumb{
+    width: .4rem;
+    background-color: rgb(255, 252, 252);
+}
+.css{
+    height: max-content;
+    width: 100%;
+    /* border: 2px solid red; */
+}
+.js{
+    height: max-content;
+    width: 100%;
+    /* border: 2px solid red; */
+}
+.web{
+    font-family: 'JetBrains Mono', monospace;
+}
+#yo{
+    background-color: rgb(255, 255, 255);
+    width: 60vw;
+    border-radius: 10px;
+    border: none;
+}
